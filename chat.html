@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Caveat+Brush' rel='stylesheet' type='text/css'>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="javascript" href="js/chat.js">
+
+</head>
+    <!-- part of sites content -->
+    <header>
+        <!-- anchor element, anchors the URL. hyper link reference -->
+        <a href="index.html" id="logo">
+        <!-- headline 1 -->
+        <h1>Densel Martin</h1>
+        <h2>Final</h2>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="chat.html" class="selected">Chat</a></li>
+            </ul>
+        </nav>
+    </header>
+  <body>
+    <div class="container">
+      <div class="pane" id="pane_0">
+        <input type="text" placeholder="Nickname" id="nick_field" class="form-control">
+        <br>
+        <input type="button" value="Set Nickname" id="nick" class="btn btn-info btn-default btn-block">
+      </div>
+      <div class="pane" id="pane_1" style="display: none">
+        <input type="text" placeholder="Chat Room Name" id="room_field" class="form-control">
+        <br>
+        <input type="button" value="Join Chat Room" id="join" class="btn btn-info btn-default btn-block">
+      </div>
+      <div class="pane" id="pane_2" style="display: none">
+        <div id="messages_container">
+        </div>
+        <p>
+          <input type="text" placeholder="Message" id="message_field" class="form-control">
+        </p>
+        <input type="button" value="Send Message" id="send" disabled class="btn btn-success btn-default btn-block">
+        <input type="button" value="Quit Chat Room" id="quit" class="btn btn-danger btn-default btn-block">
+      </div>
+  </div>
+  <script type="text/javascript" src="chat.js">
+  </script>
+  <script type="text/javascript" src="https://api.bistri.com/bistri.conference.min.js">
+  </script>
+  </body>
+  <footer>
+        <a href="http://twitter.com/denselm_/"><img src="img/twitter.png" alt="twitter handle" class="social-media-icon"></a>
+        <a href="https://instagram.com/denjmarphotos/"><img src="img/instagram.jpg" alt="instagram" class="social-media-icon"></a>
+        <p>&COPY; 2015 Densel Martin</p> 
+    </footer>
+</html>
